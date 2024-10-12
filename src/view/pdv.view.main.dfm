@@ -20,7 +20,6 @@ object Form1: TForm1
     Height = 65
     Align = alTop
     TabOrder = 0
-    ExplicitWidth = 635
   end
   object FlowPanel1: TFlowPanel
     Left = 0
@@ -29,9 +28,6 @@ object Form1: TForm1
     Height = 458
     Align = alClient
     TabOrder = 1
-    ExplicitTop = 41
-    ExplicitWidth = 635
-    ExplicitHeight = 258
     object DBGrid1: TDBGrid
       Left = 1
       Top = 1
@@ -52,8 +48,6 @@ object Form1: TForm1
     Height = 67
     Align = alBottom
     TabOrder = 2
-    ExplicitTop = 232
-    ExplicitWidth = 635
     object edtCodBarras: TEdit
       Left = 1
       Top = 1
@@ -63,7 +57,6 @@ object Form1: TForm1
       NumbersOnly = True
       TabOrder = 0
       Text = 'edtCodBarras'
-      ExplicitWidth = 634
     end
   end
   object Button1: TButton
@@ -73,7 +66,6 @@ object Form1: TForm1
     Height = 25
     Caption = 'Button1'
     TabOrder = 3
-    OnClick = Button1Click
   end
   object DataSource1: TDataSource
     Left = 480

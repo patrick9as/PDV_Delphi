@@ -102,17 +102,6 @@
             <Form>Form1</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\database\pdv.database.factory.pas"/>
-        <DCCReference Include="src\database\pdv.database.contract.pas"/>
-        <DCCReference Include="src\database\drivers\pdv.database.drivers.mssql.pas">
-            <Form>MSSQLProvider</Form>
-            <FormType>dfm</FormType>
-            <DesignClass>TDataModule</DesignClass>
-        </DCCReference>
-        <DCCReference Include="src\database\pdv.database.config.pas">
-            <ContainerId>ConfigurationCompiler</ContainerId>
-        </DCCReference>
-        <DCCReference Include="src\repository\vendas\pdv.repository.vendas.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

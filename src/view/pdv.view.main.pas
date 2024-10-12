@@ -19,7 +19,6 @@ type
     Button1: TButton;
     DBGrid1: TDBGrid;
     DataSource1: TDataSource;
-    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -32,24 +31,5 @@ var
 implementation
 
 {$R *.dfm}
-
-procedure TForm1.Button1Click(Sender: TObject);
-var
-  factory: TFactory;
-  config: TConfig;
-  repository: TRepositoryVendas;
-begin
-  config.HostName := 'localhost';
-  config.Port := 1433;
-  config.Username := 'sa';
-  config.Password := '1234';
-  config.Database := 'DB';
-  config.Provider := prMSSQL;
-
-  factory := TFactory.Create(config);
-  repository := TRepositoryVendas.Create(factory.Provider);
-  repository
-    .GetVendaByID(1);
-end;
 
 end.
